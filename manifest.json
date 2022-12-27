@@ -1,0 +1,13 @@
+{
+    "name": "chromeYTshortsPlus",
+    "description": "Add some QoL features for youtube shorts on desktop",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+       "activeTab",
+       "scripting"
+    ],
+    "background": {
+       "service_worker": "background.js"
+    }
+ }
