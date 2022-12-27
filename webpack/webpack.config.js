@@ -23,7 +23,10 @@ module.exports = {
    },
    plugins: [
       new CopyPlugin({
-         patterns: [{from: ".", to: ".", context: "public"}]
+         patterns: [{ from: ".", to: ".", context: "public" }]
+      }),
+      new CopyPlugin({
+         patterns: [{ from: "./manifest.json", to: "./manifest.json", context: "." }]
       }),
    ],
 };
