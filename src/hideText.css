@@ -1,0 +1,8 @@
+.step-description {
+    display: none;
+}
+
+.trip-panel {
+    width: 100% !important;
+    max-width: 5000px !important;
+}

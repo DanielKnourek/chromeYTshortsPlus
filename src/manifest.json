@@ -1,15 +1,22 @@
 {
   "manifest_version": 3,
-  "name": "chrome-yt-shorts-plus",
-  "version": "0.0.3",
+  "name": "chrome-present-polarsteps",
+  "version": "0.0.4",
   "content_scripts": [
     {
       "matches": [
-        "*://www.youtube.com/shorts/*"
+        "*://www.polarsteps.com/*"
       ],
       "js": [
         "button.ts"
+      ],
+      "css": [
+        "hideText.css"
       ]
     }
-  ]
+  ],
+  "action": {
+    "default_title": "Click Me",
+    "default_popup": "popup_home.html"
+  }
 }

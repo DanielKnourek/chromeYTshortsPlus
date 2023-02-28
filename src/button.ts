@@ -1,5 +1,12 @@
 console.log('Hello world!v2')
-const redirectBtnClass = 'ShowAsYTVideo';
+// const redirectBtnClass = 'ShowAsYTVideo';
+
+// hide polarsteps text
+
+// document.querySelectorAll('.step-description').forEach((e) => {
+//     let el = e as HTMLDivElement;
+//     el.style.display = 'none';
+// })
 
 // register script
 
@@ -12,27 +19,25 @@ const redirectBtnClass = 'ShowAsYTVideo';
 
 // actionsMenu.insertBefore(openAsVideoBtn, actionsMenu.firstChild)
 
-const getMenus = () => {
-    const actionMenus = document.querySelectorAll('actions') as NodeList;
-    if (!document.querySelector(`.${redirectBtnClass}`)) {
-        return null;
-    }
-    return actionMenus;
-}
+// const getMenus = () => {
+//     const actionMenus = document.querySelectorAll('actions') as NodeList;
+//     if (!document.querySelector(`.${redirectBtnClass}`)) {
+//         return null;
+//     }
+//     return actionMenus;
+// }
 
-const createRedirectBtn = (e) => {
-    let url = e?.detail?.url;
+// const createRedirectBtn = (e) => {
+//     let url = e?.detail?.url;
 
-    if (!url) {
-        console.log("No videoID found: url");
-        return;
-    }
-    console.log(url);
-    return url;
+//     if (!url) {
+//         console.log("No videoID found: url");
+//         return;
+//     }
+//     console.log(url);
+//     return url;
 
-    // console.log(e);
-}
+//     // console.log(e);
+// }
 
-
-
-document.addEventListener('yt-navigate-start', createRedirectBtn);
+// document.addEventListener('yt-navigate-start', createRedirectBtn);
